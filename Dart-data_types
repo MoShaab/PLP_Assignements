@@ -1,0 +1,25 @@
+void main() {
+  // int data type
+  int age = 25;
+  print('Age: $age');
+
+  //double data type
+  double height = 5.9;
+  print('Height: $height feet');
+
+  // Demonstrate String data type
+  String name = 'Mohamed Abdirizak';
+  print('Name: $name');
+
+  // List data type
+  List<String> fruits = ['Apple', 'Banana', 'Orange'];
+  print('Fruits: $fruits');
+
+  // Map data type
+  Map<String, dynamic> person = {
+    'name': 'Alice',
+    'age': 28,
+    'isStudent': true,
+  };
+  print('Person: $person');
+}
