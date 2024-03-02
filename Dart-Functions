@@ -1,0 +1,70 @@
+// Task 1: Add two numbers
+int addTwo(int a, int b) {
+  return a + b;
+}
+
+// Task 2: Subtract two numbers
+int subtractTwo(int a, int b) {
+  return a - b;
+}
+
+// Task 3: Multiply two numbers
+double multiplyTwo(double a, double b) {
+  return a * b;
+}
+
+// Task 4: Divide two numbers
+int divideTwo(int a, int b) {
+  if (b != 0) {
+    return a ~/ b;
+  } 
+  else {
+    print('Error: Cannot divide by zero');
+    return -1;
+  }
+}
+
+// Task 5: Get the length of a string
+int stringLength(String inputString) {
+  return inputString.length;
+}
+
+// Task 6: Get the first element of a list
+dynamic getFirstElement(List<dynamic> list) {
+  if (list.isNotEmpty) {
+    return list[0];
+  } else {
+    print('Error: List is empty');
+    return null; // Return null to indicate an error
+  }
+}
+
+void main() {
+ // Testing the functions
+//Task 1
+ int sum = addTwo(5, 3);
+ print(" Task 1 Sum is:  $sum");
+
+//Task 2
+int difference = subtractTwo(8, 3);
+print("Task 2 Difference is: $difference");
+
+ 
+//Task 3
+double product = multiplyTwo(4, 2.5);
+print("Task 3 Product is: $product");
+
+//Task 4
+int quotient = divideTwo(10, 2);
+print("Task 4 Quotient is: $quotient");
+
+//Task 5
+int lenghtString = stringLength('Hello');
+print("Task 5 String Length is: $lenghtString");
+
+//Task 6
+
+dynamic firstElement = getFirstElement([1, 2, 3]);
+print("The first elment is: $firstElement");
+
+}
